@@ -1,0 +1,6 @@
+{
+  "name": "Code Quest - Learn Python & DSA Through Games",
+  "description": "Gamified learning platform to master Python and Data Structures & Algorithms through 10 interactive mini-games, in-browser code execution, hints, solutions, and student/admin dashboards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

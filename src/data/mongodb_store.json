@@ -1,0 +1,117 @@
+{
+  "users": [
+    {
+      "_id": "user_admin_001",
+      "name": "Professor Turing",
+      "email": "admin@codequest.dev",
+      "passwordHash": "admin123",
+      "role": "admin",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "xp": 2500,
+      "level": 10,
+      "streakDays": 14,
+      "completedQuests": [
+        "quest-1",
+        "quest-2",
+        "quest-3",
+        "quest-4",
+        "quest-5",
+        "quest-6",
+        "quest-7",
+        "quest-8",
+        "quest-9",
+        "quest-10"
+      ],
+      "createdAt": "2026-08-29T02:58:19.774Z"
+    },
+    {
+      "_id": "user_student_001",
+      "name": "Alex Byte",
+      "email": "student@codequest.dev",
+      "passwordHash": "student123",
+      "role": "student",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&auto=format&fit=crop&q=80",
+      "xp": 850,
+      "level": 4,
+      "streakDays": 5,
+      "completedQuests": [
+        "quest-1",
+        "quest-2",
+        "quest-3"
+      ],
+      "createdAt": "2026-09-18T02:58:19.774Z"
+    },
+    {
+      "_id": "user_student_002",
+      "name": "Elena Rostova",
+      "email": "elena@codequest.dev",
+      "passwordHash": "pass123",
+      "role": "student",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
+      "xp": 1400,
+      "level": 6,
+      "streakDays": 8,
+      "completedQuests": [
+        "quest-1",
+        "quest-2",
+        "quest-3",
+        "quest-4",
+        "quest-5"
+      ],
+      "createdAt": "2026-09-13T02:58:19.774Z"
+    },
+    {
+      "_id": "user_student_003",
+      "name": "Kaito Tanaka",
+      "email": "kaito@codequest.dev",
+      "passwordHash": "pass123",
+      "role": "student",
+      "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=150&auto=format&fit=crop&q=80",
+      "xp": 620,
+      "level": 3,
+      "streakDays": 3,
+      "completedQuests": [
+        "quest-1",
+        "quest-2"
+      ],
+      "createdAt": "2026-09-23T02:58:19.774Z"
+    }
+  ],
+  "submissions": [
+    {
+      "_id": "sub_101",
+      "userId": "user_student_001",
+      "userName": "Alex Byte",
+      "userEmail": "student@codequest.dev",
+      "questId": "quest-1",
+      "topicTitle": "Python Basics & Variables",
+      "code": "def charge_core(ruby, emerald, sapphire, multiplier):\n    return f\"CORE: {(ruby + emerald + sapphire) * multiplier} GW\"",
+      "status": "passed",
+      "output": "All 3 unit tests passed successfully.",
+      "passedCount": 3,
+      "totalCount": 3,
+      "xpEarned": 100,
+      "timestamp": "2026-09-28T00:58:19.774Z"
+    },
+    {
+      "_id": "sub_102",
+      "userId": "user_student_002",
+      "userName": "Elena Rostova",
+      "userEmail": "elena@codequest.dev",
+      "questId": "quest-5",
+      "topicTitle": "Two Pointer Technique (DSA)",
+      "code": "def lock_target_pair(frequencies, target):\n    l, r = 0, len(frequencies)-1\n    while l < r:\n        s = frequencies[l] + frequencies[r]\n        if s == target: return [l, r]\n        elif s < target: l += 1\n        else: r -= 1\n    return [-1, -1]",
+      "status": "passed",
+      "output": "All 3 unit tests passed successfully.",
+      "passedCount": 3,
+      "totalCount": 3,
+      "xpEarned": 150,
+      "timestamp": "2026-09-27T21:58:19.774Z"
+    }
+  ],
+  "topicSettings": {},
+  "stats": {
+    "totalRuns": 12,
+    "totalPasses": 8
+  }
+}
